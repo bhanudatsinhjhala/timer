@@ -48,7 +48,7 @@
          text.innerHTML = sec + " sec / " + percent + "%";
          if (currentsec == 0) {
              if (currentmin == 0) {
-                 if (currentsec == 0 && currenthour == 0 && currentmin == 0) {
+                 if (currentsec <= 0 && currenthour <= 0 && currentmin <= 0) {
                      playAudio();
                      loading.innerHTML = `${currenthour} Hr ${currentmin} Min ${currentsec} Sec`;
                      clearInterval(reRunFunction);
